@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77C1CA"
+    tools:context="Detail">
+
+    <TextView
+        android:id="@+id/dtThucAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/imageHinh"
+        android:text="Tên Món"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dtMoTa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtThucAn"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/imageHinh"
+        android:text="MoTa"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/dtThongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtThucAn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="MoTa"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/imageHinh"
+        android:layout_width="194dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="75dp"
+        android:padding="10dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinhnenthucandangky"
+    tools:context=".DangKy">
+
+
+    <EditText
+        android:id="@+id/edittexttaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:background="#7CFAFF"
+        android:ems="10"
+        android:hint="Tai Khoan"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittextmatkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="#7CFAFF"
+        android:ems="10"
+        android:hint="Mat Khau"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittexttaikhoan" />
+
+    <EditText
+        android:id="@+id/edittextnhaplai"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#7CFAFF"
+        android:ems="10"
+        android:hint="Nhap Lai Mat Khau"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextmatkhau"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDangKy2"
+        android:layout_width="157dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="40dp"
+        android:text="Dang Ky"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextnhaplai"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

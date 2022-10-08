@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhap"
+    android:background="@drawable/hinhnenthucan">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="10dp"
+        android:background="#7CFAFF"
+        android:text="Username:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edittextUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="#7CFAFF"
+        android:text="Password:"
+        android:textColor="#070707"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edittextPassword"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edittextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="#7CFAFF"
+        android:ems="10"
+        android:hint="Tai Khoan"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="#7CFAFF"
+        android:ems="10"
+        android:hint="Mat Khau"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextUser"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="332dp"
+        android:background="#00FF0A"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="64dp"
+        android:background="#00FF0A"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/buttonDangNhap"
+        app:layout_constraintTop_toBottomOf="@+id/edittextPassword"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_food_bank_24"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
